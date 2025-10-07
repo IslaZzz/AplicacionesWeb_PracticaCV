@@ -1,3 +1,5 @@
+@import url("./global.css");
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -10,7 +12,7 @@ h2 {
 }
   body{
     font-family: Arial, sans-serif;
-    background-color: #204f78;
+    background-color: var(--background);
   }
   table {
     padding: 20px 20px 30px 20px;
@@ -19,6 +21,7 @@ h2 {
     font-family: Arial, sans-serif;
     background-color: white;
     border-radius: 0px;
+    float:right;
   }
   th, td {
     padding: 8px;
@@ -30,7 +33,7 @@ h2 {
   }
   a:hover{
     color: skyblue;
-    font-size: 1.1em;
+    text-decoration: underline;
     font-weight: bolder;
     transition: 0.5s;
   }
@@ -46,6 +49,20 @@ h2 {
   }
   .menu{
     color: white;
+    display: block;
+    float: right;
+    background-color: var(--highlight);
+    margin-right: 40px;
+    padding: 20px;
+    width: 20%;
+  }
+  .menu:hover{
+    background-color: var(--highlight-yellow);
+    transition: 1s;
+    color:black;
+  }
+  .menu:hover a{
+    color:black;
   }
   .menu a{
     color: white;
@@ -66,5 +83,10 @@ h2 {
     border: 10px white solid;
     border-radius: 10px;
    width: 700px
-
+  }
+  #miNombre::first-line{
+    color: var(--highlight);
+  }
+  .indx strong{
+    background-color: var(--highlight-yellow);
   }
